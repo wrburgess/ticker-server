@@ -11,6 +11,6 @@ describe Dashboard do
   end
 
   # it { should belong_to :user }
-  it { should have_many :zones }
+  # it { should have_many :zones }
 
 end
