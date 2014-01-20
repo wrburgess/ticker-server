@@ -4,7 +4,7 @@ namespace :tck do
     input = ''
     STDOUT.puts "Drop, recreate, and migrate app database? y[es] or n[o]"
     input = STDIN.gets.chomp
-    if input == "y" && Rails.env == 'development'
+    if input == "y" && Rails.env == "development"
       Rake::Task["db:drop"].execute
       Rake::Task["db:create"].execute
       Rake::Task["db:migrate"].execute
